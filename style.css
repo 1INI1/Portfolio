@@ -1,0 +1,23 @@
+/* 1. Blinking Terminal Cursor next to your main title */
+header h1::after {
+  font-family: monospace;   
+  content: "_";
+  color: #f3f5f3;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink{
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+body {
+    font-family: monospace, Monaco;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #e6edf3;
+    border: 2px solid #e6edf3;
+    border-radius: 10px;
+    padding: 2.5rem;
+}
